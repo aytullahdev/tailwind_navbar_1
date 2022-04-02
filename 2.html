@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+ 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Navbar Prctice</title>
+</head>
+<body class="bg-blue-600 ">
+    <div class="flex">
+        <div class="w-72 duration-500 h-screen bg-blue-700 relative slideer" >
+            <img src="./assets/control.png" class="absolute cursor-pointer -right-3 top-9 w-7 border-2 border-blue-500 rounded-full duration-500 sliderbtn" alt="" onclick="slide()">
+        </div>
+        <div class="p-7 text-2xl font-semibold bg-white w-full flex-1 h-screen">
+            <h1>Home page</h1>
+        </div>
+    </div>
+    <script>
+        function slide(){
+            document.querySelector('.slideer').classList.toggle('w-20');
+            document.querySelector('.sliderbtn').classList.toggle('rotate-180')
+        }
+    </script>
+</body>
+</html>
