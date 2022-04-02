@@ -11,8 +11,28 @@
 </head>
 <body class="bg-blue-600 ">
     <div class="flex">
-        <div class="w-72 duration-500 h-screen bg-blue-700 relative slideer" >
-            <img src="./assets/control.png" class="absolute cursor-pointer -right-3 top-9 w-7 border-2 border-blue-500 rounded-full duration-500 sliderbtn" alt="" onclick="slide()">
+        <div class="w-72 duration-500 h-screen bg-blue-700 relative slideer " >
+            <img src="./assets/control.png" class="absolute cursor-pointer -right-5 top-9 w-7 border-2 border-blue-500 rotate-0 rounded-full duration-500 sliderbtn w-10 h-10" alt="" onclick="slide()">
+            <div class="flex gap-x-4 items-center overflow-hidden p-5">
+                <img src="./assets/logo.png" class="logo rotate-0 cursor-pointer duration-500 mr-2" alt="">
+                <h1 class="text-white origin-left font-medium text-xl duration-300">Designer</h1>
+            </div>
+            <div class="flex gap-x-4 items-center overflow-hidden p-5 cursor-pointer hover:bg-blue-600">
+                <img src="./assets/Calendar.png" class="w-10 h-10 mr-2 rotate-0 cursor-pointer  duration-500" alt="">
+                <h1 class="text-white origin-left font-medium text-xl duration-300">Calender</h1>
+            </div>
+            <div class="flex gap-x-4 items-center overflow-hidden p-5 cursor-pointer hover:bg-blue-600">
+                <img src="./assets/Chart.png" class="w-10 h-10 mr-2 rotate-0 cursor-pointer  duration-500" alt="">
+                <h1 class="text-white origin-left font-medium text-xl duration-300">Chart</h1>
+            </div>
+            <div class="flex gap-x-4 cursor-pointer hover:bg-blue-600 items-center overflow-hidden p-5">
+                <img src="./assets/Chat.png" class="w-10 h-10 mr-2 rotate-0 cursor-pointer  duration-500" alt="">
+                <h1 class="text-white origin-left font-medium text-xl duration-300">Chat</h1>
+            </div>
+            <div class="flex cursor-pointer hover:bg-blue-600  gap-x-4 items-center overflow-hidden p-5">
+                <img src="./assets/Setting.png" class="w-10 h-10 mr-2 rotate-0 cursor-pointer  duration-500" alt="">
+                <h1 class="text-white origin-left font-medium text-xl duration-300">Setting</h1>
+            </div>
         </div>
         <div class="p-7 text-2xl font-semibold bg-white w-full flex-1 h-screen">
             <h1>Home page</h1>
@@ -22,6 +42,7 @@
         function slide(){
             document.querySelector('.slideer').classList.toggle('w-20');
             document.querySelector('.sliderbtn').classList.toggle('rotate-180')
+            document.querySelector('.logo').classList.toggle('rotate-180')
         }
     </script>
 </body>
